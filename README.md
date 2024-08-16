@@ -11,3 +11,12 @@ App for customer loyalty
 - Customer can redeem points which removes drinks purchased from database
 - Bartender has database of all customers and their points
 - Transaction history stored somewhere
+
+## API functions
+- Login: username, password
+- Logout: shut down session
+- Generate key
+- Account creation
+- Account removal
+- Redeeming points (subtracting)
+- Adding points
