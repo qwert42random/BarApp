@@ -13,10 +13,13 @@ App for customer loyalty
 - Transaction history stored somewhere
 
 ## API functions
-- Login: username, password
+- Login: username, password {"username" : "example", "password", "hash"} -> POST?
 - Logout: shut down session
 - Generate key
-- Account creation
+- Account creation {"RequestType" : int, "username" : "example", "email" : "example@example.com",  "password", "hash"} API -> Database 
 - Account removal
-- Redeeming points (subtracting)
+- Redeeming points (subtracting) {}
 - Adding points
+
+200 Ok {"Response" : "Message", "Success" : bool} <- Server (Database)
+401 Unauth (Key has been rejected) <- Server
